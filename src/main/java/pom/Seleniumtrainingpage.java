@@ -24,8 +24,7 @@ public class Seleniumtrainingpage {
 	@FindBy(xpath="//button[.=' Add to Cart']")
 	private WebElement addtocartbutton;
 	
-	@FindBy(xpath="//div[@id='callo"
-			+ "ut']/span")
+	@FindBy(xpath="//div[@id='callo"+ "ut']/span")
 	private WebElement itemaddedmessage;
 	
 	// Initialization

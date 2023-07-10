@@ -53,7 +53,8 @@ public class Excelutility {
 	{
 		DataFormatter df=new DataFormatter();
 		String data=df.formatCellValue(workbook.getSheet(sheetname).getRow(rowNum).getCell(cellNum));
-		return data;}
+		return data;
+		}
 	
 	/**
 	 * This method is used to fetch multiple data from excel
@@ -73,15 +74,21 @@ public class Excelutility {
 			  map.put(key, value);
 		}
 		return map;
+		}
+		public void closeexcel()
+		{
+			try {
+				workbook.close();
+			} catch (IOException e) {
+				
+				e.printStackTrace();
+			}
 		   
 		   
 		
 		
 			
 	}
-		public void close() throws IOException
-		{
-			workbook.close();
-		}
+		
 
 }
